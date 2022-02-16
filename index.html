@@ -17,7 +17,8 @@
 <body>
     <header>
         <div class="container">
-            <h1 class="text-center fw-bold text-info">Monthly 💰 </h1>
+            <h1 class="text-center fw-bolder text-info ">Student <span class="fw-bold text-success">Monthly</span> Cost
+            </h1>
         </div>
         </div>
     </header>
@@ -25,15 +26,16 @@
         <section>
             <div class="row align-items-center mt-4">
                 <div class="col-12 col-lg-6">
-                    <img class="img-fluid" src="image/money.jpg" alt="">
+                    <img class="img-fluid" src="image/money.png" alt="">
                 </div>
-                <div class="col-12 col-lg-6 bg-light mx-auto p-5 shadow p-3 mb-5 bg-body rounded ">
+                <div class="col-12 col-lg-6 bg-light mx-auto p-5 shadow p-3 mb-5 rounded ">
                     <h1 class=" text-center text-black fs-4">Income</h1>
                     <div>
                         <div class="row mb-3">
                             <label class="col-sm-2 col-form-label fs-6 ">Income:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="income-input" placeholder="Your Income">
+                                <input type="text" class="form-control input-field" id="income-input"
+                                    placeholder="Your Income">
                             </div>
                         </div>
                     </div>
@@ -59,8 +61,8 @@
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <button id="calculate-button" class="btn btn-primary" type="button">Calculate</button>
                     </div>
-                    <h1 class="text-center fs-5 pt-4">Total Expenses: 000</h1>
-                    <h1 class="text-center fs-5">Balance: 000</h1>
+                    <h1 class="text-center fs-5 pt-4">Total Expenses: <span id="expenses-amount">000</span></h1>
+                    <h1 class="text-center fs-5">Balance: <span id="last-balance">000</span></h1>
                     <div class="row mb-3 gap-4 my-4">
                         <div class="d-flex col-4 me-4">
                             <label id="save-input" class="col-sm-6 col-8 col-form-label">Save: </label>
@@ -85,7 +87,10 @@
         </section>
     </main>
     <footer>
-
+        <p class="text-center">© 2022 <span class="text-info fw-bold text-decoration-none"> <a
+                    href="https://abunaem.com/">Abu
+                    Naem</a></span> - All
+            Rights Reserved</p>
     </footer>
 
 
@@ -93,6 +98,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <!-- javaScript Link  -->
+    <script src="app.js"></script>
 </body>
 
 </html>
